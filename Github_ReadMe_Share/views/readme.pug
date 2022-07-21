@@ -1,6 +1,12 @@
 doctype html
 html
-   head
-      title=user + "/" + repo
-   body
-      p.greetings#people !{readme}
+    head
+        title=user + "/" + repo
+        link(rel="stylesheet" href="/style.css")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css")
+    body(class="antialiased bg-body text-body font-body")
+        div(class="")
+            section(class="py-16 md:py-24 bg-white" style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center top;")
+                div(class="container px-4 mx-auto")
+                    div(class="md:max-w-3xl mx-auto")
+                        | !{readme}
