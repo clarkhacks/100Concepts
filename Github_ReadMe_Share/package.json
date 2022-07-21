@@ -1,0 +1,19 @@
+{
+  "name": "github_readme_share",
+  "version": "1.0.0",
+  "description": "Share your github readme with the world in a beautiful way",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkhacks/100Concepts.git#main"
+  },
+  "author": "ClarkHacks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clarkhacks/100Concepts/issues"
+  },
+  "homepage": "https://github.com/clarkhacks/100Concepts/tree/main#readme"
+}
