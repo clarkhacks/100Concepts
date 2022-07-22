@@ -1,0 +1,12 @@
+{
+    "url": "https://100concepts.wkmn.app",
+    "description": "100 Concepts, similar to 100 Days of Code. A collection of 100 concepts, each with a description, a demo, and an informative post.",
+    "author": {
+      "name": "Clark Weckmann",
+      "email": "contact@wkmn.dev",
+      "twitter": "https://www.twitter.com/@TheWeckmann",
+      "github": "https://github.com/clarkhacks"
+    },
+    "feedUrl": "/feed.xml"
+  }
+  

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="You're reading it!" />
+  <title>{{ title }}</title>
+  <link rel="shortcut icon" type="image/jpg" href="/favicon.png" />
+  <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ siteMeta.author.name }}" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="/assets/styles/common.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- START NAV -->
+  {% include header.liquid %}
+
+  <!-- END NAV -->
+
+  <!-- Image -->
+  <section class="hero">
+    <div class="container">
+      <section class="section content">
+        <div class="content is-medium">
+          <h1 class="title">{{title}}</h1>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="hero columns" style="
+    width: 100%;
+">
+    <div class="hero-body column is-half is-offset-one-quarter">
+      <div class="container content">
+        <section class="section">
+          <p>{{content}}</p>
+        </section>
+      </div>
+    </div>
+  </section>
+  {% include footer.html %}
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      }
+    });
+  </script>
+  <script src="https://ackee.weckmann.me/tracker.js" data-ackee-server="https://ackee.weckmann.me"
+    data-ackee-domain-id="2b9b661b-3ade-47c9-a2d5-ac0c4275c5bb"></script>
+  <script src="/assets/js/script.js" defer></script>
+
+</body>
+
+</html>

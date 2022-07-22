@@ -13,14 +13,20 @@ const port = 3000;
 app.set('view engine', 'pug');
 app.set('views', './views');
 //static files
-app.use(express.static('public'));
+app.use(express.static('public', {
+    setHeaders: (res, path) => {
+        if (path.endsWith('.css')) {
+            res.setHeader('Content-Type', 'text/css');
+        }
+    }
+}));
 // routes
 app.get('/', (req, res) => {
     res.render('index');
 });
-app.get('/:user/:repo', (req, res) => {
+app.get('/:user/:repo/:branch', (req, res) => {
     //axios get contents of remote readme
-    axios.get(`https://raw.githubusercontent.com/${req.params.user}/${req.params.repo}/main/README.md`)
+    axios.get(`https://raw.githubusercontent.com/${req.params.user}/${req.params.repo}/${req.params.branch}/README.md`)
         .then(response => {
             //convert markdown data to html
             var html = md.render(response.data);

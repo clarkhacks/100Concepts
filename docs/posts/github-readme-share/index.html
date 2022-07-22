@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="You're reading it!" />
+  <title>Github ReadMe Share</title>
+  <link rel="shortcut icon" type="image/jpg" href="/favicon.png" />
+  <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="Clark Weckmann" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="/assets/styles/common.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- START NAV -->
+    <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="https://github.com/clarkhacks/100Concepts/raw/main/shared/img/header.png" alt="Logo" />
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="/" class="navbar-item is-active is-size-5 has-text-weight-semibold">
+            Home
+          </a>
+          <a href="https://dev.to/wkmn" target="_blank" class="navbar-item is-size-5 has-text-weight-semibold" id="ackee_devto">
+            Dev.to
+          </a>
+          <a href="https://buy.stripe.com/bIY01YbeK2ZQ3vOfZc" target="_blank" class="navbar-item is-size-5 has-text-weight-semibold">
+            Donate
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- END NAV -->
+
+  <!-- Image -->
+  <section class="hero">
+    <div class="container">
+      <section class="section content">
+        <div class="content is-medium">
+          <h1 class="title">Github ReadMe Share</h1>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="hero columns" style="
+    width: 100%;
+">
+    <div class="hero-body column is-half is-offset-one-quarter">
+      <div class="container content">
+        <section class="section">
+          <p><h2>Github Readme Share</h2>
+<ul>
+<li>Simple url to share your projects readme.md</li>
+<li>Clean UI</li>
+<li>Responsive</li>
+<li>Use Expressjs</li>
+<li>Make a static version?</li>
+</ul>
+<p><strong>Todo:</strong></p>
+<ul>
+<li>✅ Build the outline</li>
+<li>🔲 Style the frontend</li>
+<li>🔲 Express server that gets the readme file</li>
+<li>🔲 Convert readme file to html</li>
+<li>🔲 Links must resolve</li>
+<li>🔲 Images must render</li>
+<li>🔲 Host</li>
+<li>🔲 Share with the world</li>
+</ul>
+</p>
+        </section>
+      </div>
+    </div>
+  </section>
+    <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>100 Concepts</strong> by Clark Weckmann & WKMN Development
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      }
+    });
+  </script>
+  <script src="https://ackee.weckmann.me/tracker.js" data-ackee-server="https://ackee.weckmann.me"
+    data-ackee-domain-id="2b9b661b-3ade-47c9-a2d5-ac0c4275c5bb"></script>
+  <script src="/assets/js/script.js" defer></script>
+
+</body>
+
+</html>

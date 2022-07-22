@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Clark Weckmann</title>
+  <subtitle>100 Concepts, similar to 100 Days of Code. A collection of 100 concepts, each with a description, a demo, and an informative post.</subtitle>
+  <link href="https://100concepts.wkmn.app" rel="self"/>
+  <link href="https://100concepts.wkmn.app"/>
+  <updated>2022-06-21T00:00:00Z</updated>
+  <id>https://100concepts.wkmn.app</id>
+  <author>
+    <name>Clark Weckmann</name>
+    <email>contact@wkmn.dev</email>
+  </author>
+    
+    <entry>
+      <title>Github ReadMe Share</title>
+      <link href="https://100concepts.wkmn.app/posts/github-readme-share/"/>
+      <updated>2022-06-21T00:00:00Z</updated>
+      <id>https://100concepts.wkmn.app/posts/github-readme-share/</id>
+      <content type="html">&lt;h2&gt;Github Readme Share&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Simple url to share your projects readme.md&lt;/li&gt;
+&lt;li&gt;Clean UI&lt;/li&gt;
+&lt;li&gt;Responsive&lt;/li&gt;
+&lt;li&gt;Use Expressjs&lt;/li&gt;
+&lt;li&gt;Make a static version?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Todo:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ Build the outline&lt;/li&gt;
+&lt;li&gt;🔲 Style the frontend&lt;/li&gt;
+&lt;li&gt;🔲 Express server that gets the readme file&lt;/li&gt;
+&lt;li&gt;🔲 Convert readme file to html&lt;/li&gt;
+&lt;li&gt;🔲 Links must resolve&lt;/li&gt;
+&lt;li&gt;🔲 Images must render&lt;/li&gt;
+&lt;li&gt;🔲 Host&lt;/li&gt;
+&lt;li&gt;🔲 Share with the world&lt;/li&gt;
+&lt;/ul&gt;
+
+        &lt;hr/&gt; &lt;p&gt;&lt;a href=&#39;mailto:arpitbatra123@gmail.com?subject=Reply: Github ReadMe Share&#39;&gt;Reply via email&lt;/a&gt; &lt;/p&gt;
+      </content>
+    </entry>
+</feed>
