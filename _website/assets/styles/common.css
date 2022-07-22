@@ -6779,7 +6779,6 @@ a.navbar-item:hover {
     }
 
     .navbar-menu {
-        background-color: #fff;
         box-shadow: 0 8px 16px rgba(10, 10, 10, .1);
         padding: .5rem 0
     }
@@ -11614,12 +11613,6 @@ print {
 .hero.is-white .subtitle a:not(.button),
 .hero.is-white .subtitle strong {
     color: #0a0a0a
-}
-
-@media screen and (max-width:1023px) {
-    .hero.is-white .navbar-menu {
-        background-color: #fff
-    }
 }
 
 .hero.is-white .navbar-item,
