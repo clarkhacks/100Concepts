@@ -1,11 +1,19 @@
 {
     "cleanUrls": true,
-    "rewrites": [{
+    "rewrites": [
+        {
+            "source": "/:path*",
+            "has": [{
+                "type": "host",
+                "value": "100concepts.wkmn.dev"
+            }],
+            "destination": "/docs/:path*"
+        },{
         "source": "/*",
         "has": [{
             "type": "host",
             "value": "portfolio.clark.today"
         }],
-        "destination": "/Portfolio/"
+        "destination": "/Portfolio/*"
     }]
 }
