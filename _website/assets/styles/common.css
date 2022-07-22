@@ -7068,6 +7068,17 @@ a.navbar-item:hover {
     }
 }
 
+.timer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #F5F5F5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 12px 27px -5px rgba(0, 0, 0, 0.82);
+    -webkit-box-shadow: 0px 12px 27px -5px rgba(0, 0, 0, 0.82);
+}
+
 .hero.is-fullheight-with-navbar {
     min-height: calc(100vh - 3.25rem)
 }
