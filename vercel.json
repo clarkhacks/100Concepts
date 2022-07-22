@@ -1,0 +1,11 @@
+{
+    "cleanUrls": true,
+    "rewrites": [{
+        "source": "/*",
+        "has": [{
+            "type": "host",
+            "value": "portfolio.clark.today"
+        }],
+        "destination": "/Portfolio/"
+    }]
+}
