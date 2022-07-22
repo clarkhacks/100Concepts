@@ -109,7 +109,6 @@ reverse: true
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4) {
                 var repos = JSON.parse(xhr.responseText);
-                console.log(repos);
                 repos.forEach(repo => {
                     // capitalize repo.commit.message
                     var commit = repo.commit.message.charAt(0).toUpperCase() + repo.commit.message.slice(1);
