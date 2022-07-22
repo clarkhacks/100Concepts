@@ -10,11 +10,11 @@
 * Make a static version?
 
 __Todo:__
-* [_] Build the outline
-* [] Style the frontend
-* [] Express server that gets the readme file
-* [] Convert readme file to html
-* [] Links must resolve
-* [] Images must render
-* [] Host
-* [] Share with the world
+* ✅ Build the outline
+* 🔲 Style the frontend
+* 🔲 Express server that gets the readme file
+* 🔲 Convert readme file to html
+* 🔲 Links must resolve
+* 🔲 Images must render
+* 🔲 Host
+* 🔲 Share with the world
