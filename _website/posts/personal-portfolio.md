@@ -11,10 +11,9 @@ date: "2022-06-22"
 * Repo links if applicable
 
 __Todo:__
-<!-- ✅ -->
 * 🔲 Collect photos, links, and other information about projects.
-* 🔲 Wireframe Website
-* 🔲 Build Website
-* 🔲 Host/Publish live
+* ✅ Wireframe Website
+* ✅ Build Website
+* ✅ Host/Publish live
 * 🔲 Live image api?
 * 🔲 CMS?
