@@ -4,7 +4,7 @@
         "source": "/:path*",
         "has": [{
             "type": "host",
-            "value": "100concepts.wkmn.dev"
+            "value": "100concepts.wkmn.app"
         }],
         "destination": "/docs/:path*"
     }, {
@@ -13,6 +13,6 @@
             "type": "host",
             "value": "portfolio.clark.today"
         }],
-        "destination": "/:path*"
+        "destination": "/Portfolio/:path*"
     }]
 }
