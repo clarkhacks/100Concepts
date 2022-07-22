@@ -9,11 +9,11 @@
             }],
             "destination": "/docs/:path*"
         },{
-        "source": "/*",
+        "source": "/",
         "has": [{
             "type": "host",
             "value": "portfolio.clark.today"
         }],
-        "destination": "/Portfolio/*"
+        "destination": "/Portfolio/index.html"
     }]
 }
