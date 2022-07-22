@@ -1,7 +1,4 @@
 ---
-pagination:
-data: collections.posts
-size: 10
 reverse: true
 ---
 <!DOCTYPE html>
@@ -105,7 +102,6 @@ reverse: true
         var xhr = new XMLHttpRequest();
         xhr.open('GET', 'https://api.github.com/repos/clarkhacks/100Concepts/commits?per_page=10', true);
         xhr.setRequestHeader("Accept", "application/vnd.github+json");
-        xhr.setRequestHeader("Authorization", "token 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");
         xhr.send();
         var commits = [];
         var commitsSection = document.createElement('div');
@@ -116,7 +112,7 @@ reverse: true
                 repos.forEach(repo => {
                     // capitalize repo.commit.message
                     var commit = repo.commit.message.charAt(0).toUpperCase() + repo.commit.message.slice(1);
-                    var commitPost = '<a href="' + repo.html_url + '" class="content is-medium columns is-mobile"><span class="column is-four-fifths"><h2 class="subtitle is-5 has-text-grey">' + new Date(repo.commit.committer.date).toLocaleString() + '</h2><h1 class=" title has-text-black is-4">' + commit + '</h1></span><span class="column has-text-right"><i class="fas fa-arrow-right"></i></span></a>';
+                    var commitPost = '<a href="' + repo.html_url + '" target="_blank" class="content is-medium columns is-mobile"><span class="column is-four-fifths"><h2 class="subtitle is-5 has-text-grey">' + new Date(repo.commit.committer.date).toLocaleString() + '</h2><h1 class=" title has-text-black is-4">' + commit + '</h1></span><span class="column has-text-right"><i class="fas fa-arrow-right"></i></span></a>';
                     //add commit to commits section
                     commitsSection.innerHTML += commitPost;
                     document.getElementById('commitPosts').appendChild(commitsSection);
