@@ -3,4 +3,5 @@
 
 ## Index
 
-* __[Github Readme Share](https://100concepts.wkmn.app/)__ Share any Github Readme.md file in a clean, short, and reponsive way.
+* __[Github Readme Share](https://100concepts.wkmn.app/posts/github-readme-share/)__ Share any Github Readme.md file in a clean, short, and reponsive way.
+* __[100 Concepts Website](https://100concepts.wkmn.app/)__ A Way to breakdown and share these concepts that are being built with the public.
