@@ -1,14 +1,13 @@
 {
     "cleanUrls": true,
-    "rewrites": [
-        {
-            "source": "/:path*",
-            "has": [{
-                "type": "host",
-                "value": "100concepts.wkmn.dev"
-            }],
-            "destination": "/docs/:path*"
-        },{
+    "rewrites": [{
+        "source": "/:path*",
+        "has": [{
+            "type": "host",
+            "value": "100concepts.wkmn.dev"
+        }],
+        "destination": "/docs/:path*"
+    }, {
         "source": "/:path*",
         "has": [{
             "type": "host",
