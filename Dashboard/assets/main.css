@@ -112,6 +112,9 @@ a {
 	text-decoration: underline;
 	transition: color 0.25s ease;
 }
+i {
+	margin-left: 8px;
+}
 
 #wrapper {
 	-webkit-overflow-scrolling: touch;
