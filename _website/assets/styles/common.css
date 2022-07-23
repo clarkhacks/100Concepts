@@ -2159,6 +2159,10 @@ fieldset[disabled] .button {
     width: auto
 }
 
+.post-container {
+    max-width: 700px!important;
+}
+
 .container.is-fluid {
     max-width: none;
     padding-left: 32px;
