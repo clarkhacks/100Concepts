@@ -11,7 +11,7 @@
 __Todo:__
 * ✅ Basic Concept
 * 🔲 Images Options (Themes)
-* 🔲 Location Specification
-* 🔲 Custom Link
+* ✅ Location Specification (50%)
+* ✅ Custom Link
 * 🔲 Publish It
 * 🔲 CDN
