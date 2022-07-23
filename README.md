@@ -7,4 +7,4 @@
 * __[100 Concepts Website](https://100concepts.wkmn.app/)__ A Way to breakdown and share these concepts that are being built with the public.
 * __[Personal Porfolio](https://portfolio.clark.today)__ Simple portfolio to show off some personal projects.
 * __[Twitch Streamer Card](https://www.alfredosnakes.com)__ A template to share links and stream information, like Linkree, just better.
-* __[App Dashboard](#ComingSoon)__ A static dashboard to display all of your links and applications.
+* __[App Dashboard](https://breadly.wkmn.app/)__ A static dashboard to display all of your links and applications.
