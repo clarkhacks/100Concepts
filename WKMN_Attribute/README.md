@@ -5,13 +5,11 @@
 
 * Customizable link when clicked.
 * Custom location specification (Left, Right & Top, Bottom)
-* Themeable
 * Looks the same on all devices.
 
 __Todo:__
 * ✅ Basic Concept
-* 🔲 Images Options (Themes)
-* ✅ Location Specification (50%)
+* ✅ Location Specification
 * ✅ Custom Link
 * 🔲 Publish It
 * 🔲 CDN
