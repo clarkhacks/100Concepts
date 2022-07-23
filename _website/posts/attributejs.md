@@ -2,7 +2,7 @@
 title: "Attribute Js"
 date: "2022-06-23"
 ---
-## WKMN Attribute JS
+## WKMN Attribute JS [See It Live](https://wkmnjs.wkmn.app/)
 
 * Customizable link when clicked.
 * Custom location specification (Left, Right & Top, Bottom)
@@ -12,5 +12,5 @@ __Todo:__
 * ✅ Basic Concept
 * ✅ Location Specification
 * ✅ Custom Link
-* 🔲 Publish It
-* 🔲 CDN
+* ✅ Publish It
+* ✅ CDN
