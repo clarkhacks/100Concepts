@@ -16,6 +16,6 @@ __Todo:__
 * ✅ Style Front End
 * 🔲 Choose Framework
 * 🔲 Authentication (?)
-* 🔲 Font Awesome
+* ✅ Font Awesome
 * 🔲 One-Click Deploy
 * 🔲 Host Demo
