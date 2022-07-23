@@ -5,3 +5,5 @@
 
 * __[Github Readme Share](https://100concepts.wkmn.app/posts/github-readme-share/)__ Share any Github Readme.md file in a clean, short, and reponsive way.
 * __[100 Concepts Website](https://100concepts.wkmn.app/)__ A Way to breakdown and share these concepts that are being built with the public.
+* __[Personal Porfolio](#ComingSoon)__ Simple portfolio to show off some personal projects.
+* __[Twitch Streamer Card](https://www.alfredosnakes.com)__ A template to share links and stream information, like Linkree, just better.

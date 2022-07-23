@@ -6,13 +6,13 @@
             "type": "host",
             "value": "100concepts.wkmn.app"
         }],
-        "destination": "/docs/:path*"
+        "destination": "https://100concepts.wkmn.app/docs/:path*"
     }, {
         "source": "/:path*",
         "has": [{
             "type": "host",
             "value": "portfolio.clark.today"
         }],
-        "destination": "/Portfolio/:path*"
+        "destination": "https://100concepts.wkmn.app/Portfolio/:path*"
     }]
 }
