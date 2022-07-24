@@ -43,6 +43,9 @@ function getCurrentTime() {
     const d = new Date();
     const hours = d.getHours();
     const minutes = d.getMinutes();
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
     document.getElementById("currentTime").innerHTML = hours + ":" + minutes;
 }
 //get today's date
