@@ -1,5 +1,5 @@
 ---
-title: "100 Concepts Website"
+title: "100 Concepts Website ✅"
 date: "2022-06-22"
 ---
 ## 100 Concepts Website [See It Live](https://portfolio.clark.today)

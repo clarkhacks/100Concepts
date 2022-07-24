@@ -1,5 +1,5 @@
 ---
-title: "Twitch Streamer Card"
+title: "Twitch Streamer Card ✅"
 date: "2022-06-23"
 ---
 ## Twitch Streamer Card [See It Live](https://www.alfredosnakes.com)

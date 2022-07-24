@@ -1,5 +1,5 @@
 ---
-title: "Nap Roulette"
+title: "Nap Roulette ✅"
 date: "2022-06-24"
 ---
 ## Nap Roulette [See It Live](https://naproulette.wkmn.app/)

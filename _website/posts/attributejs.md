@@ -1,5 +1,5 @@
 ---
-title: "Attribute Js"
+title: "Attribute Js ✅"
 date: "2022-06-23"
 ---
 ## WKMN Attribute JS [See It Live](https://wkmnjs.wkmn.app/)
