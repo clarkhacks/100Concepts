@@ -1,5 +1,5 @@
 ---
-title: "Static Dashbaord"
+title: "Static Dashbaord 🚧"
 date: "2022-06-23"
 ---
 
