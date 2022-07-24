@@ -3,7 +3,7 @@ title: "Static Dashbaord"
 date: "2022-06-23"
 ---
 
-## Static Dashbaord [Se It Live](https://breadly.wkmn.app)
+## Static Dashbaord [See It Live](https://breadly.wkmn.app)
 
 * Customizable
 * Take JSON data and load links
