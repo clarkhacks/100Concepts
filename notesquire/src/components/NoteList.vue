@@ -19,7 +19,7 @@
                 <a class="inline-block py-3 px-7 w-1/2 md:w-auto text-lg leading-8 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm"
                     :href="'/edit/'+ note.url">Edit Note</a>
                 <a class="ml-2 inline-block py-3 px-7 w-1/2 md:w-auto text-lg leading-8 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm"
-                    :href="'/n/' + note.owner + '/' + note.url">View</a>
+                    :href="'/@' + note.owner + '/' + note.url">View</a>
                 <button
                     class="ml-2 inline-block py-3 px-7 w-1/2 md:w-auto text-lg leading-8 text-red-50 font-medium text-center bg-red-500 hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 rounded-md shadow-sm"
                     @click="$emit('delete', note.url)">Delete</button>

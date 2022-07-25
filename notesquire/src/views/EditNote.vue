@@ -216,7 +216,7 @@ export default {
                     .doc(this.url)
                     .set(note, { merge: true })
                     .then(() => {
-                        this.$router.push("/n/" + this.user.username + "/" + this.url,);
+                        this.$router.push("/@" + this.user.username + "/" + this.url,);
                     });
                 db.collection("users")
                     .doc(user.uid)
@@ -230,7 +230,7 @@ export default {
                     .doc(this.url)
                     .set(note, { merge: true })
                     .then(() => {
-                        this.$router.push("/n/" + this.user.username + "/" + this.url,);
+                        this.$router.push("/@" + this.user.username + "/" + this.url,);
                     });
             }
         },

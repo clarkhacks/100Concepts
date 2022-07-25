@@ -58,7 +58,7 @@ const routes = [
     }
   },
   {
-    path: '/n/:userName/:noteId',
+    path: '/@:userName/:noteId',
     name: 'note',
     component: NoteView,
     meta: {

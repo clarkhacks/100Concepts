@@ -127,18 +127,18 @@ export default {
       });
     },
     copyToClipboard() {
-      copy("https://notesquire.wkmn.app/" + this.userName + "/n/" + this.url);
+      copy("https://notesquire.wkmn.app/@" + this.userName + "/" + this.url);
     },
     shareToFacebook() {
       window.open(
-        "https://www.facebook.com/sharer/sharer.php?u=https://notesquire.wkmn.app/" + this.userName + "/n/" +
+        "https://www.facebook.com/sharer/sharer.php?u=https://notesquire.wkmn.app/@" + this.userName + "/" +
         this.url,
         "_blank"
       );
     },
     shareToTwitter() {
       window.open(
-        "https://twitter.com/intent/tweet?text=Check out this note on notesquire.wkmn.app/" + this.userName + "/n/" +
+        "https://twitter.com/intent/tweet?text=Check out this note on notesquire.wkmn.app/@" + this.userName + "/" +
         this.url,
         "_blank"
       );
