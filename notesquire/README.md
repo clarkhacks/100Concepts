@@ -15,7 +15,8 @@ __Todo:__
 * ✅ Render Notes
 * ✅ Authentication
 * ✅ Login
-* 🔲 Create Account
+* ✅ Create Account
 * ✅ 404
+* 🔲 Edit Notes
 
 
