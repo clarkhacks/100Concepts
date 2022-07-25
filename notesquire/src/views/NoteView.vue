@@ -73,12 +73,14 @@ export default {
       description: "",
       dataReady: false,
       signedIn: false,
+      userName: "",
     };
   },
   methods: {
     getNote() {
       //get note from firebase storage
       var userName = this.$route.params.userName;
+      this.userName = userName;
       var noteID = this.$route.params.noteId;
       firebase
         .firestore()
@@ -125,18 +127,18 @@ export default {
       });
     },
     copyToClipboard() {
-      copy("https://notesquire.wkmn.app/n/" + this.url);
+      copy("https://notesquire.wkmn.app/" + this.userName + "/n/" + this.url);
     },
     shareToFacebook() {
       window.open(
-        "https://www.facebook.com/sharer/sharer.php?u=https://notesquire.wkmn.app/n/" +
+        "https://www.facebook.com/sharer/sharer.php?u=https://notesquire.wkmn.app/" + this.userName + "/n/" +
         this.url,
         "_blank"
       );
     },
     shareToTwitter() {
       window.open(
-        "https://twitter.com/intent/tweet?text=Check out this note on notesquire.wkmn.app/n/" +
+        "https://twitter.com/intent/tweet?text=Check out this note on notesquire.wkmn.app/" + this.userName + "/n/" +
         this.url,
         "_blank"
       );
