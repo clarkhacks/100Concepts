@@ -4,7 +4,7 @@
           <div class="max-w-sm mx-auto">
             <div class="mb-6 text-center">
               <a class="inline-block mb-6" href="#">
-                <img class="h-16" src="/assets/flex-ui-assets/logos/flex-circle-green.svg" alt="">
+                <img class="h-16" src="/assets/logo.svg" alt="">
               </a>
               <h3 class="mb-4 text-2xl md:text-3xl font-bold">Join our community</h3>
               <p class="text-lg text-coolGray-500 font-medium">Start your journey with one word.</p>

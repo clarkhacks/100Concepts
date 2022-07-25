@@ -122,6 +122,7 @@
     </div>
 </template>
 <script>
+import firebase from '@/config/db.js'
 export default {
     name: 'NavBar',
     props: {
@@ -140,15 +141,16 @@ export default {
     },
     methods: {
         signout() {
-            this.$emit('signout')
+            firebase.auth().signOut()
+            this.$router.push('/login')
         },
         showMenu() {
             //remove class hidden
-            this.$refs.menu.classList.remove('hidden')
+            this.$refs.menu.classList.remove('hidden');
         },
         hideMenu() {
             //add class hidden
-            this.$refs.menu.classList.add('hidden')
+            this.$refs.menu.classList.add('hidden');
         },
     },
 }
