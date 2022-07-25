@@ -15,9 +15,9 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-auto">
+            <div class="w-full md:w-auto flex">
                 <a class="inline-block py-3 px-7 w-1/2 md:w-auto text-lg leading-8 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm"
-                    :href="'/edit/'+ note.url">Edit Note</a>
+                    :href="'/edit/'+ note.url">Edit</a>
                 <a class="ml-2 inline-block py-3 px-7 w-1/2 md:w-auto text-lg leading-8 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm"
                     :href="'/@' + note.owner + '/' + note.url">View</a>
                 <button
