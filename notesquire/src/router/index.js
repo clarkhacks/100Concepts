@@ -52,8 +52,8 @@ router.beforeEach((to, from, next) => {
   const currentUser = firebase.auth().currentUser;
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
   const forPublic = to.matched.some(record => record.meta.forPublic);
-  if (forPublic) next();
   if (requiresAuth && !currentUser) next('/login');
+  else if (forPublic) next();
   else if (!requiresAuth && currentUser && !forPublic) next('/');
   else next();
 });

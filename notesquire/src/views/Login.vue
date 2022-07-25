@@ -29,13 +29,9 @@
                 <div class="w-full md:w-auto mt-1"><a class="inline-block text-xs font-medium text-green-500 hover:text-green-600" href="#">Forgot your password?</a></div>
               </div>
               <button class="inline-block py-3 px-7 mb-4 w-full text-base text-green-50 font-medium text-center leading-6 bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm" @click="login">Sign In</button>
-              <button class="inline-flex items-center justify-center py-3 px-7 mb-6 w-full text-base text-coolGray-500 font-medium text-center leading-6 bg-white border border-coolGray-100 hover:border-coolGray-200 rounded-md shadow-sm">
-                <img class="mr-2" src="/assets/flex-ui-assets/elements/sign-up/google-icon-sign-up.svg" alt="">
-                <span>Sign in with Google</span>
-              </button>
               <p class="text-center">
                 <span class="text-xs font-medium">Need an account?</span>
-                <a class="inline-block text-xs font-medium text-green-500 hover:text-green-600 hover:underline" href="#">Sign Up</a>
+                <a class="inline-block text-xs font-medium text-green-500 hover:text-green-600 hover:underline" href="signup">Sign Up</a>
               </p>
             </div>
           </div>

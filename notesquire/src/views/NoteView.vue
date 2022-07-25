@@ -48,7 +48,6 @@
               ></path></svg
             ><span
               class="ml-2 text-sm text-coolGray-500 hover:text-coolGray-600 font-medium"
-              
               >Copy Link</span
             >
           </button>
@@ -86,6 +85,16 @@
               ></path>
             </svg>
           </button>
+          <button
+            v-if="signedIn"
+            class="inline-flex mr-4 items-center justify-center py-2 px-4 text-coolGray-300 hover:text-coolGray-400 bg-white hover:bg-coolGray-100 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200"
+            @click="logOut"
+          >
+            <span
+              class="text-sm text-coolGray-500 hover:text-coolGray-600 font-medium"
+              >Log Out</span
+            >
+          </button>
         </div>
       </div>
     </div>
@@ -105,6 +114,7 @@ export default {
       url: "",
       description: "",
       dataReady: false,
+      signedIn: false,
     };
   },
   methods: {
@@ -131,6 +141,14 @@ export default {
         .catch((err) => {
           console.log("Error getting document", err);
         });
+      // if user signed in
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          this.signedIn = true;
+        } else {
+          this.signedIn = false;
+        }
+      });
     },
     copyToClipboard() {
       copy("https://notesquire.wkmn.app/n/" + this.url);
@@ -148,6 +166,9 @@ export default {
           this.url,
         "_blank"
       );
+    },
+    logOut() {
+      firebase.auth().signOut();
     },
   },
   mounted() {

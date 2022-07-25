@@ -128,12 +128,14 @@ export default {
       return "Note-" + Math.random().toString(36).substring(2, 7);
     },
     checkIfUrlTaken(){
+      console.log("Made it here");
+      var that = this;
       firebase.firestore().collection("notes").where("url", "==", this.url).get().then(function(querySnapshot) {
         if (querySnapshot.size > 0) {
           alert("URL already taken");
         }
         else {
-          this.saveNote();
+          that.saveNote();
         }
       });
     },
