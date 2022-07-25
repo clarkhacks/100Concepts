@@ -1,14 +1,32 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Editor from '../views/Editor.vue'
+import NoteView from '../views/NoteView.vue'
+import NotFound from '../views/404.vue'
 import firebase from '@/config/db.js'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
+    component: Editor,
     meta: {
       requiresAuth: true
+    }
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: NotFound,
+    meta: {
+      forPublic: true
+    }
+  },
+  {
+    path: '/n/:id',
+    name: 'note',
+    component: NoteView,
+    meta: {
+      forPublic: true
     }
   },
   {

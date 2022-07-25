@@ -1,41 +1,46 @@
 <template>
-		<div id="wrapper">
-			<div id="main">
-				<div class="inner">
-					<h1 id="text05">NoteSquire</h1>
-					<p id="text04">NoteSquire is a simple and clean place to share notes with people.</p>
-					<div id="container01" class="container default">
-						<div class="wrapper">
-							<div class="inner">
-								<div id="form01">
-									<div class="inner">
-                    <p id="text01" style="color: red;">{{error}}</p>
-										<div class="field">
-											<input type="email" name="email" id="form01-email" placeholder="Email" maxlength="128" required v-model="email"/>
-										</div>
-										<div class="field">
-											<input type="password" name="password" id="form01-password" placeholder="Password" maxlength="256" required v-model="password"/>
-										</div>
-										<div class="actions">
-											<button @click="login">Sign In</button>
-										</div>
-									</div>
-								</div>
-								<p id="text01">Create Account</p>
-							</div>
-						</div>
-					</div>
-					<ul id="icons01" class="icons">
-						<li>
-							<a class="n01" href="https://100concepts.wkmn.app">
-								<svg><use xlink:href="assets/icons.svg#information"></use></svg>
-								<span class="label">Information</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+	      <section class="py-24 md:py-32 bg-white" style="background-image: url('/assets/flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div class="container px-4 mx-auto">
+          <div class="max-w-sm mx-auto">
+            <div class="mb-6 text-center">
+              <a class="inline-block mb-6" href="#">
+                <img class="h-16" src="/assets/flex-ui-assets/logos/flex-circle-green.svg" alt="">
+              </a>
+              <h3 class="mb-4 text-2xl md:text-3xl font-bold">NoteSquire</h3>
+              <p class="text-lg text-coolGray-500 font-medium">Start your journey with a single word.</p>
+            </div>
+            <div>
+              <div class="mb-6">
+                <label class="block mb-2 text-coolGray-800 font-medium" for="">Email*</label>
+                <input class="appearance-none block w-full p-3 leading-5 text-coolGray-900 border border-coolGray-200 rounded-lg shadow-md placeholder-coolGray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" type="email" placeholder="dev@wkmn.dev" v-model="email">
+              </div>
+              <div class="mb-4">
+                <label class="block mb-2 text-coolGray-800 font-medium" for="">Password*</label>
+                <input class="appearance-none block w-full p-3 leading-5 text-coolGray-900 border border-coolGray-200 rounded-lg shadow-md placeholder-coolGray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" type="password" v-model="password" placeholder="************">
+              </div>
+              <div class="flex flex-wrap items-center justify-between mb-6">
+                <div class="w-full md:w-1/2">
+                  <label class="relative inline-flex items-center">
+                    <input class="form-checkbox appearance-none" type="checkbox">
+                    <img class="absolute top-1/2 transform -translate-y-1/2 left-0" src="/assets/flex-ui-assets/elements/sign-up/checkbox-icon.svg" alt="">
+                    <span class="ml-7 text-xs text-coolGray-800 font-medium">Remember me</span>
+                  </label>
+                </div>
+                <div class="w-full md:w-auto mt-1"><a class="inline-block text-xs font-medium text-green-500 hover:text-green-600" href="#">Forgot your password?</a></div>
+              </div>
+              <button class="inline-block py-3 px-7 mb-4 w-full text-base text-green-50 font-medium text-center leading-6 bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm" @click="login">Sign In</button>
+              <button class="inline-flex items-center justify-center py-3 px-7 mb-6 w-full text-base text-coolGray-500 font-medium text-center leading-6 bg-white border border-coolGray-100 hover:border-coolGray-200 rounded-md shadow-sm">
+                <img class="mr-2" src="/assets/flex-ui-assets/elements/sign-up/google-icon-sign-up.svg" alt="">
+                <span>Sign in with Google</span>
+              </button>
+              <p class="text-center">
+                <span class="text-xs font-medium">Need an account?</span>
+                <a class="inline-block text-xs font-medium text-green-500 hover:text-green-600 hover:underline" href="#">Sign Up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 </template>
 <script>
 import Firebase from '@/config/db.js'
