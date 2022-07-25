@@ -1,5 +1,8 @@
 
-import Firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/firestore'
+import 'firebase/auth'
+import 'firebase/storage'
 let config = {
   apiKey: "AIzaSyC3DFVy3hInOy7dxoCVY6sD9mwqtFEoiCk",
   authDomain: "notesquire.firebaseapp.com",
@@ -9,8 +12,8 @@ let config = {
   appId: "1:532766710082:web:81553be34737c9c21650db"
 
 };
-  export default !Firebase.apps.length ? Firebase.initializeApp(config) : Firebase.app();
-  export const db =  !Firebase.apps.length ? Firebase.initializeApp(config) : Firebase.firestore();
-  export const firestorage =  !Firebase.apps.length ? Firebase.initializeApp(config) : Firebase.storage();
-  export const firestore = !Firebase.apps.length ? Firebase.initializeApp(config) : Firebase.firestore();
-  export const googleProvider = new Firebase.auth.GoogleAuthProvider();
+  export default !firebase.apps.length ? firebase.initializeApp(config) : firebase.app();
+  export const db =  !firebase.apps.length ? firebase.initializeApp(config) : firebase.firestore();
+  export const firestorage =  !firebase.apps.length ? firebase.initializeApp(config) : firebase.storage();
+  export const firestore = !firebase.apps.length ? firebase.initializeApp(config) : firebase.firestore();
+  export const googleProvider = new firebase.auth.GoogleAuthProvider();
