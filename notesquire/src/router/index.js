@@ -2,13 +2,41 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Editor from '../views/Editor.vue'
 import NoteView from '../views/NoteView.vue'
 import NotFound from '../views/404.vue'
+import Dashboard from '../views/Dashboard.vue'
+import Account from '../views/Account.vue'
+import Profile from '../views/Profile.vue'
+import EditNote from '../views/EditNote.vue'
 import firebase from '@/config/db.js'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'dashboard',
+    component: Dashboard,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/account',
+    name: 'account',
+    component: Account,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/new',
+    name: 'new',
     component: Editor,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/edit/:id',
+    name: 'edit',
+    component: EditNote,
     meta: {
       requiresAuth: true
     }
@@ -22,7 +50,15 @@ const routes = [
     }
   },
   {
-    path: '/n/:id',
+    path: '/@:username',
+    name: 'profile',
+    component: Profile,
+    meta: {
+      forPublic: true
+    }
+  },
+  {
+    path: '/n/:userName/:noteId',
     name: 'note',
     component: NoteView,
     meta: {
