@@ -19,6 +19,6 @@ __Todo:__
 * ✅ Login
 * ✅ Create Account
 * ✅ 404
-* 🔲 Edit Notes
+* ✅ Edit Notes
 
 
