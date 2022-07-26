@@ -95,10 +95,10 @@
                     </li>
                 </ul>
                 <div
-                    class="fixed bottom-0 -left-4 max-w-xs w-full flex flex-wrap items-center p-6 pl-10 justify-between bg-coolGray-50">
+                    class="fixed bottom-0 -left-4 max-w-xs flex flex-wrap items-center p-6 pl-10 justify-between bg-coolGray-50">
                     <div class="w-auto">
                         <div class="flex flex-wrap -mx-2">
-                            <div class="w-auto p-2">
+                            <div class="w-auto p-2 hidden sm:flex">
                                 <img src="/assets/user.png" class="w-14" alt="" />
                             </div>
                             <div class="w-auto p-2">
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-auto">
+                    <div class="w-auto ml-2">
                         <button class="text-coolGray-500 hover:text-coolGray-600" @click="signout">
                             <svg width="24" height="24" viewbox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
