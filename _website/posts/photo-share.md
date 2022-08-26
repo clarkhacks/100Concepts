@@ -1,5 +1,5 @@
 ---
-title: "Photo Share"
+title: "Photo Share ✅"
 date: "2022-09-25"
 ---
 ## PhotoShare App

@@ -1,5 +1,5 @@
 ---
-title: "Swarm SMS Api"
+title: "Swarm SMS Api ✅"
 date: "2022-09-12"
 ---
 ## Swarm

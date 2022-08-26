@@ -1,5 +1,5 @@
 ---
-title: "Type. Live Notes"
+title: "Type. Live Notes ✅"
 date: "2022-09-03"
 ---
 ## Live Note Sharing
