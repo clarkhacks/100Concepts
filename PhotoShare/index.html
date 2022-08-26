@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Photo Share</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="WKMN Development Photo Sharing." />
+	<link rel="icon" type="image/png" href="/images/icons/icon-72x72.png" />
+	<link rel="manifest" href="/manifest.json" />
+	<link rel="apple-touch-icon" href="/images/icons/icon-72x72.png" />
+	<meta property="og:site_name" content="Photo Share" />
+	<meta property="og:title" content="Photo Share" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="WKMN Development Photo Sharing." />
+	<link
+		href="https://fonts.googleapis.com/css?display=swap&family=Inter:500,500italic,300,300italic,800,800italic,400,400italic"
+		rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-loading">
+	<div id="wrapper">
+		<div id="main">
+			<div class="inner">
+				<section id="home-section">
+					<h1 id="text03" class="style3">Photo Bucket</h1>
+					<h1 id="user-name" class="style5"></h1>
+					<h1 class="style2">Upload and name your photos to share with friends.</h1>
+					<ul id="nav" class="style1 buttons">
+						<li>
+							<a href="#upload" class="button n01"><svg>
+									<use xlink:href="assets/icons.svg#upload"></use>
+								</svg><span class="label">Upload</span></a>
+						</li>
+						<li>
+							<a href="#photos" class="button n02"><svg>
+									<use xlink:href="assets/icons.svg#menu"></use>
+								</svg><span class="label">All Images</span></a>
+						</li>
+					</ul>
+					<div id="gallery" class="style1 gallery full">
+						<div class="inner">
+							<ul id="home-gallery">
+								<!-- images appended here -->
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section id="login-section">
+					<h1 id="text03" class="style3">Photo Bucket</h1>
+					<h2 id="text06" class="style1">Login Below</h2>
+					<p id="text10" class="style2">Sign in with your email/password or Google.</p>
+					<form enctype="multipart/form-data" id="login" onsubmit="event.preventDefault(); loginUser();"
+						class="style2">
+						<div class="inner">
+							<div class="field">
+								<input type="email" name="email" id="login-email" placeholder="Email" maxlength="128"
+									required />
+							</div>
+							<div class="field">
+								<input type="password" name="password" id="login-password" placeholder="Password"
+									maxlength="256" required />
+							</div>
+							<div class="actions">
+								<button type="submit"><svg>
+										<use xlink:href="assets/icons.svg#lock"></use>
+									</svg><span class="label">Login</span></button>
+							</div>
+						</div>
+						<input type="hidden" name="id" value="login" />
+					</form>
+				</section>
+				<section id="upload-section">
+					<h1 id="text02" class="style3">Add Photo</h1>
+					<h2 id="text05" class="style1">Single Photo Upload</h2>
+					<form enctype="multipart/form-data" id="new-photo-form"
+						onsubmit="event.preventDefault(); uploadPhoto();" class="style1">
+						<div class="inner">
+							<div class="field">
+								<input type="text" name="image-title" id="new-photo-form-image-title"
+									placeholder="Image Title" maxlength="256" required />
+							</div>
+							<div class="field">
+								<div class="file" id="fileHolder" data-placeholder="Photo" data-filename="">
+									<input type="file" accept="image/gif, image/jpeg, image/jpg, image/png" name="photo"
+										id="new-photo-form-photo" required />
+									<button tabindex="-1" type="button" class="select"><svg>
+											<use xlink:href="assets/icons.svg#folder"></use>
+										</svg></button>
+								</div>
+							</div>
+							<div class="actions">
+								<button type="submit"><svg>
+										<use xlink:href="assets/icons.svg#upload"></use>
+									</svg><span class="label">Upload</span></button>
+							</div>
+						</div>
+						<input type="hidden" name="id" value="new-photo-form" />
+					</form>
+				</section>
+				<section id="newalbum-section">
+					<h1 id="text07" class="style3">New Album</h1>
+					<h2 id="text08" class="style1">Upload Photos</h2>
+					<form enctype="multipart/form-data" id="new-album-form" method="post" action="#" class="style1">
+						<div class="inner">
+							<div class="field">
+								<input type="text" name="album-name" id="new-album-form-album-name"
+									placeholder="Album Name" maxlength="256" required />
+							</div>
+							<div class="field">
+								<div class="file" data-placeholder="Photos" data-filename="">
+									<input type="file" accept="image/gif, image/jpeg, image/jpg, image/png" name="photo"
+										id="new-album-form-photo" required />
+									<button tabindex="-1" type="button" class="select"><svg>
+											<use xlink:href="assets/icons.svg#folder"></use>
+										</svg></button>
+								</div>
+							</div>
+							<div class="actions">
+								<button type="submit"><svg>
+										<use xlink:href="assets/icons.svg#upload"></use>
+									</svg><span class="label">Upload</span></button>
+							</div>
+						</div>
+						<input type="hidden" name="id" value="new-album-form" />
+					</form>
+				</section>
+				<section id="photos-section">
+					<!-- photos appended here -->
+				</section>
+				<footer id="footer">
+					<div id="container01" class="container default full">
+						<div class="wrapper">
+							<div class="inner">
+								<h2 id="text43" class="style1">PhotoShare</h2>
+								<div id="list02" class="style1 list">
+									<ul>
+										<li>
+											<p><a href="#">Home</a></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.24.0/firebase-app.js"
+		integrity="sha512-xMRCzOTjDJ11FB7kcSaei0DtKn4RcWQTf6mDnnyckVnEjsrFDwzBegw38vSvz0YEpqHd9C4hwB7z3TG9AlWwDQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.24.0/firebase-firestore.min.js"
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.24.0/firebase-auth.min.js" crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.24.0/firebase-storage.min.js" crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<script src="https://gh.wkmn.cloud/BrowserCopyText/copyText.js"></script>
+	<script src="/assets/main.js"></script>
+	<script src="/assets/control.js"></script>
+
+</body>
+
+</html>

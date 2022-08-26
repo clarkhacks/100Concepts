@@ -41,8 +41,8 @@ function getTodaysDate() {
 //   get current time
 function getCurrentTime() {
     const d = new Date();
-    const hours = d.getHours();
-    const minutes = d.getMinutes();
+    var hours = d.getHours();
+    var minutes = d.getMinutes();
     if (minutes < 10) {
         minutes = "0" + minutes;
     }
@@ -56,7 +56,7 @@ setInterval(getCurrentTime, 1000);
 //get json from https://api.npoint.io/6f845374e05d1f612cd3 and create list item for each item in the links
 function getLinks() {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://gist.githubusercontent.com/clarkhacks/df50b2171284045b46d2e59eb048f50d/raw/breadly.json", true);
+    xhr.open("GET", "https://clarkcms-default-rtdb.firebaseio.com/breadly.json", true);
     xhr.onload = function () {
         if (this.status == 200) {
             const links = JSON.parse(this.responseText).links;
