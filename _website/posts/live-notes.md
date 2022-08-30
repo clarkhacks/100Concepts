@@ -1,6 +1,6 @@
 ---
 title: "Type. Live Notes ✅"
-date: "2022-09-03"
+date: "2022-08-03"
 ---
 ## Live Note Sharing [See It Live](https://type.wkmn.app)
 

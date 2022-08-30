@@ -1,6 +1,6 @@
 ---
 title: "Swarm SMS Api ✅"
-date: "2022-09-12"
+date: "2022-08-12"
 ---
 ## Swarm [See It Live](https://swarmed.wkmn.app)
 
