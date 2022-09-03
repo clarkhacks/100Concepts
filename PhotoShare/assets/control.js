@@ -3,7 +3,7 @@ const firebaseConfig = {
   authDomain: "clarkcms.firebaseapp.com",
   databaseURL: "https://clarkcms-default-rtdb.firebaseio.com",
   projectId: "clarkcms",
-  storageBucket: "cdnphotos.wkmn.app",
+  storageBucket: "gassets.wkmn.app",
   messagingSenderId: "70813844310",
   appId: "1:70813844310:web:d9fef7a66bcf64f73d4cf7",
 };
