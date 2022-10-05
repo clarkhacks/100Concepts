@@ -6,6 +6,8 @@
           <p class="inline-block text-green-500 font-medium">{{ author }}</p>
           <span class="mx-1 text-green-500">•</span>
           <p class="inline-block text-green-500 font-medium">{{ date }}</p>
+          <span class="mx-1 text-green-500">•</span>
+          <p class="inline-block text-green-500 font-medium" @click="toggleDarkMode()"><span class="underline">{{ darkMode.mode }}</span> {{darkMode.icon}}</p>
         </div>
         <h2 class="mb-4 text-3xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
           {{ title }}
@@ -74,7 +76,14 @@ export default {
       dataReady: false,
       signedIn: false,
       userName: "",
+      darkMode: {
+        mode: "Dark Mode",
+        icon: "🌒",
+      },
     };
+  },
+  created() {
+    this.getNote();
   },
   methods: {
     getNote() {
@@ -99,6 +108,7 @@ export default {
               .get()
               .then((doc) => {
                 if (doc.exists) {
+                  document.title = doc.data().name;
                   this.title = doc.data().name;
                   this.note = doc.data().content;
                   this.author = doc.data().author;
@@ -146,9 +156,34 @@ export default {
     logOut() {
       firebase.auth().signOut();
     },
-  },
-  mounted() {
-    this.getNote();
-  },
+    toggleDarkMode(){
+      // add/remove class to h2 text-white or text-white/text-coolGray-900
+      // add/remove class to section bg-coolGray-900 or bg-white
+      // add/remove class to p text-coolGray-500 or text-white
+      if (this.darkMode.mode == "Dark Mode") {
+        this.darkMode.mode = "Light Mode";
+        this.darkMode.icon = "🌕";
+        document.querySelector("h2").classList.add("text-white");
+        document.querySelector("h2").classList.remove("text-darkCoolGray-900");
+        document.querySelector("section").classList.add("bg-coolGray-900");
+        var p = document.querySelectorAll("p");
+        for (var i = 0; i < p.length; i++) {
+          p[i].classList.add("text-white");
+          p[i].classList.remove("text-coolGray-500");
+        }
+      } else {
+        this.darkMode.mode = "Dark Mode";
+        this.darkMode.icon = "🌒";
+        document.querySelector("h2").classList.remove("text-white");
+        document.querySelector("h2").classList.add("text-darkCoolGray-900");
+        document.querySelector("section").classList.remove("bg-coolGray-900");
+        var p = document.querySelectorAll("p");
+        for (var i = 0; i < p.length; i++) {
+          p[i].classList.remove("text-white");
+          p[i].classList.add("text-coolGray-500");
+        }
+      }
+    }
+  }
 };
 </script>
